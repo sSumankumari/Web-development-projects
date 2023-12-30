@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.484);
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 1%;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+}
+
+#logo {
+    width: 20%;
+    margin: 10px 34px;
+}
+
+#logo img {
+    /* border: 2px solid red; */
+    height: 50px;
+    width: 170px;
+    margin: 3px 6px;
+    
+}
+
+#navbar ul {
+    /* border: 2px solid red; */
+    justify-content: center;
+    width: 70%;
+    display: flex;
+}
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px 60px;
+    font-size: large;
+}
+
+#navbar ul li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+@media screen and (max-width: 1384px) {
+    #navbar {
+        height: 5%;
+    }
+    #navbar ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0px;
+        width: 20%;
+    }
+}
+
+/* Home Page */
+#home {
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    padding: 150px 95px;
+    /* padding-bottom: 250px; */
+    height: 380px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    font-size: 4rem;
+}
+
+.btn{
+    background-color: azure;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 20px;
+    padding: 7px;
+}
+.btn a{
+    text-decoration: none;
+}
+.btn a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Services Container */
+.services-container h1{
+    margin: 10px 40%;
+    padding: 10px;
+}
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#services .box{
+    border: 2px solid brown;
+    border-radius: 15px;
+    background-color: rgb(224, 218, 211);
+    margin: 25px 25px;
+    padding: 34px;
+}
+#services .box img{
+    height: 370px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.services-container .primary-2{
+    font-size: 3rem;
+}
+@media screen and (max-width: 1210px) {
+    #services{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #services .box img {
+        height: auto;
+        width: auto;
+    }
+    #services .box{
+
+        height: auto;
+        width: auto;
+    }
+}
+
+/* Second Part */
+#services-cont{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bigcontainer{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 800px;
+    margin: 6px;
+}
+.bigbox{
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color: rgb(235, 236, 238);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.smallbox{
+    /* border: 2px solid green; */
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    margin: 1%;
+    padding: 2px 12%;
+}
+.smallbox h2{
+    font-size: 1.8rem;
+    margin: 10px;
+}
+.smallbox ul, p{
+    font-size: large;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.smallbox img{
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid purple; */
+    height: 300px;
+}
+
+/* Why Us - Part */
+#big-container{
+    text-align: center;
+    /* border: 2px solid rgb(23, 22, 22); */
+    border-radius: 12px;
+    background-color: rgb(190, 189, 189);
+    height: 100%;
+    width: 100%;
+}
+#big-container h1{
+    font-size: 3rem;
+    margin: 7px;
+}
+.big-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+}
+.big-box ul{
+    list-style: none;
+    display: flex;
+    /* flex-direction: column; */
+    margin: 20px;
+    padding: 20px;
+}
+.small-box{
+    margin: 16px;
+    padding: 25px;
+    border: 2px solid rgb(249, 247, 247);
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 5px grey;
+}
+.small-box:hover{
+    cursor: pointer;
+}
+.small-box h1{
+    color: rgb(144, 144, 145);
+}
+
+/* Membership Part */
+#membership{
+    text-align: center;
+}
+#membership h1{
+    font-size: 3rem;
+}
+.big-box1{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+}
+.big-box1 ul{
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+}
+.small-box1{
+    border: 2px solid burlywood;
+    border-radius: 16px;
+    background-color: rgb(243, 243, 225);
+    margin: 30px;
+    padding: 30px;
+}
+.small-box1:hover{
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(199, 193, 193);
+    cursor: pointer;
+}
+.small-box1 .dot{
+    list-style: circle;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.small-box1 .btn{
+    font-size: 15px;
+}
+.small-box1 h2{
+    font-size: 2rem;
+    margin: 10px;
+}
+b{
+    font-size: 30px;
+    margin: 3px;
+}
+
+/* Contact Section */
+#contact{
+    text-align: center;
+    background-color: rgb(190, 189, 189);
+    height: 100%;
+    width: 100%;
+}
+#contact h1{
+    font-size: 3rem;
+}
+
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+}
+.myform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.myinput{
+    font-size: 15px;
+    width: 40%;
+    padding: 5px;
+    margin: 6px;
+    /* text-align: center; */
+    border: 2px solid #727288;
+    border-radius: 10px;
+}
+#textarea{
+    margin: 10px;
+    font-size: 15px;
+}
+
+#contact-box .btn{
+    color: white;
+    padding: 10px 18px;
+    font-size: 17px;
+    border: 2px solid black;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px 2px gray;
+    background-color: #8c8ca4;
+    margin: 20px;
+}
+#contact-box .btn:hover{
+    cursor: pointer;
+}
+
+/* Footer Part */
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    height: 20px;
+}

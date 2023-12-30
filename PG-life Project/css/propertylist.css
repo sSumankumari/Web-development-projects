@@ -1,0 +1,258 @@
+/* CSS Reset */
+*{
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+}
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    /* border: 2px solid black; */
+    height: 70px;
+    width: 170px;
+    margin: 3px 6px;
+}
+
+#navbar ul{
+    display: flex;
+    position: absolute;
+    right: 20px;
+} 
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+    margin: auto;
+}
+
+#navbar ul li img{
+    display: flex;
+    color: white;
+    height: 30px;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+#navbar ul li a{
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    /* position: relative; */
+    /* top: 3px; */
+    text-decoration: none;
+}
+
+#navbar ul li:hover{
+    color: white;
+    /* padding: 1px; */
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+/* Bootstrap Part */
+/* .horizontal{
+    display: flex;
+    color: black;
+    background-color: grey;
+    font-size: 14px;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    z-index: 2;
+    position: sticky;
+    top: 90px;
+} */
+.breadcrumb-box{
+    z-index: 2;
+    position: sticky;
+    top: 95px;
+}
+
+/* Content Part */
+.container{
+    width: 100%;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container #box{
+    /* border: 1px solid black ; */
+    display: flex;
+    height: 60px;
+    width: 65%;
+    align-self: center;
+    margin: 10px;
+    /* margin-top: 70px; */
+}
+.container #box img{
+    display: flex;
+    color: white;
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 100%;
+}
+.container #box li{
+    list-style: none;
+    font-size: 1rem;
+    margin: auto;
+    padding: auto;
+}
+.container .box1{
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px  gray;
+    background-color: aliceblue;
+    display: flex;
+    height: 220px;
+    width: 75%;
+    align-self: center;
+    margin: 16px;
+}
+.container .box1 img{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 10px;
+    height: 80%;
+    width: 23%;
+}
+.star-container i {
+    color: #EA322E;
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+.interested-container {
+    text-align: center;
+    padding-right: 42px;
+}
+
+@media (max-width: 768px) {
+    .interested-container {
+        padding-right: 0px;
+    }
+}
+
+.interested-container i {
+    color: #EA322E;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.interested-text {
+    font-size: 10px;
+}
+
+/* Container bbox */
+.container .bbox{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: auto;
+    height: 90%;
+    width: 77%;
+}
+.container .bbox .box2{
+    display: block;
+    height: 30%;
+    width: 100%;
+}
+.container .bbox .box2 p{
+    color: rgb(84, 82, 82);
+}
+.container .bbox img{
+    display: flex;
+    /* justify-content: center; */
+    align-self: flex-start;
+    padding: 10px;
+    margin: 5px;
+    height: 30%;
+    width: 12%;
+}
+.container .bbox .box3{
+    display: flex;
+    align-self: center;
+    height: 20%;
+    width: 100%;
+}
+.container .bbox .box3 button{
+    color: white;
+    background-color: rgb(33, 132, 149);
+    border-color: white;
+    border-radius: 8px;
+    display: flex;
+    margin-left: 380px;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 90px;
+}
+.viewbtn a{
+    text-decoration: none;
+    color: white;
+}
+.viewbtn:hover{
+    background-color: blanchedalmond;
+    color: black;
+    cursor: pointer;
+}
+
+/* Footer-Part */
+footer{
+    background-color: black;
+    height: 100px;
+}
+.city{
+    padding: 10px 35px;
+    margin: 8px;
+}
+.city a{
+    color: white;
+    text-decoration: none;
+}
+.city a:hover{
+    /* color: black; */
+    /* border: 1px solid black; */
+    /* border-radius: 8px; */
+    /* background-color: gainsboro; */
+    /* padding: 5px; */
+    text-decoration: underline;
+}
+#footer-cities{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.footer-copyright{
+    color: gray;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
